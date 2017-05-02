@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charse="utf-8" />
+        <title>entreprise</title>
+        <link rel="stylesheet" type="text/css" href="style.css"> <!--liker sur css-->
+    </head>
+    
+    <body>
+    	<!--corp de la page-->
+
+    	<h1 class="titre2">Contact</h1>
+    <nav>  	
+    <h2>Menu</h2>
+    <ul>
+            <li><a href="entreprise.html">home</a></li>
+            <li><a href="info.html">info</a></li>
+            <li><a href="partenaire.html">partenaires</a></li>
+            <li><a href="projet.html">projet</a></li>
+    </ul>
+    </nav>
+    <section>
+            <h2>inscription</h2>
+            <article>
+                <!-- Intro formulaire -->
+                <form method="GET" action="traitement.php">
+                    <!-- contenue du formulaire-->
+
+                    <label for="Nom">Nom</label>:<br/> <input type="text" name="nom" id="nom" placeholder="Nom"/>
+                    <br/>
+                    <label for="prenom">Prenom</label>:<input type="text" name="prenom" id="Prenom" placeholder="Prenom :" size="30" maxlength="20">
+                    <br/>
+                    <label for="pass">Mot de passe</label> : <input type="Password" name="pass" id="pass" placeholder="Password"/>
+                    <br/>
+                    <label for="des">commentaire</label> : <textarea name="des" id="des" rows="10" cols="50" placeholder="description"></textarea>
+                    <br/>
+                    <label for="mail">Mail</label> :<br/> <input type="email" name="mail" id="mail" placeholder="email"/>
+                    <br/>
+                    <label for="telephone">Telephone</label> : <input type="tel" name="telephone" id="telephone" placeholder="phone"/>
+                    <br/>
+                    <legend>Sexe</legend>
+                    <input type="radio" name="sexe" value="Homme" id="Homme" checked/><label for="Homme">Homme</label><br/>
+                    <input type="radio" name="sexe" value="Femme" id="Femme"/><label for="Femme">Femme</label><br/>
+                    <br/>
+
+                    <fieldset>
+                        <legend>Pays</legend>
+                        <label for="Pays">Votre pays</label><br/>
+                        <select name="Pays" id="pays">
+                        <optgroup label="europe">
+                        <option value="France">France</option>
+                        <option value="Allemagne">Allemagne</option>
+                        </optgroup>
+                        <optgroup label="Autre">
+                        <option value="UK">UK</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Coree du nord">Coree du nord</option>
+                        <option value="Japon">Japon</option>
+                        <option value="Russie">Russie</option>
+                        <option value="Suisse">Suisse</option>
+                        </optgroup>
+                        </select><br/>
+                    </fieldset>
+                    <br/>
+                    <input type="submit" name="envoyer" id="envoyer" value="Envoyer"/>
